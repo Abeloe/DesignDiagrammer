@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7b04e4ba-a53b-43e7-96a8-d9abbbedfd70" name="DesignKlasseDiagram" linkedPackageId="6259b27b-3f12-4e13-8571-95b6a8b56963" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6d975d0a-3448-4ef7-8e6b-186ccc44ec5f">
+      <profileInstance Id="1de6e219-1947-4c36-8ae9-f608d1735890" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="88098d4b-9468-4f1a-8b5a-aa0fdab951ac">
+      <profileInstance Id="99f83d87-66a0-4922-ad49-562a4224f707" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0d247fea-3fd0-4979-ada7-c32c8af44ccb" name="Booking" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e06663e0-8e85-4458-8cd1-a852b0a9089d" />
+        <targetEnds>
+          <association Id="5156c2d0-0e7e-418e-9637-236e4416cf13" isDerived="false" sourceEndRoleName="Booking" targetEndRoleName="Deltager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="94aebfc2-b3b3-4863-9456-9e5ca9ea3651" LastKnownName="Deltager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="018cfc20-fd8f-4516-aa9f-b1d140a0713e" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a1ed741c-554b-42e9-8fbd-7e876e7c2c78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6583ab65-8fe4-46d1-a584-e8fcba7b0037" name="Deltager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7d124955-b64b-44fb-8988-68a0985b0a85" name="Lower" value="6">
+                      <elementDefinition Id="263a4fa0-f938-440c-a168-949d65b39db2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="37b40dea-30ac-414b-b1d8-da8a99127c5e" name="Upper" value="*">
+                      <elementDefinition Id="04a5d883-6f9a-44ad-8543-7c84c624fa69" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c7a6b063-c985-4914-ae7e-4c6f869dd9fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8775cce4-d673-4706-88b3-ac5db80307ec" />
+          </association>
+          <association Id="b588994b-0aec-4990-a8e0-8a6dceab35a8" isDerived="false" sourceEndRoleName="Booking" targetEndRoleName="Lokale" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c4eab0a-c6e0-4442-acc7-a142ae3555a9" LastKnownName="Lokale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d242b5b2-ca9e-4879-b020-9d6fe84c101e" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7f99ce1e-2de4-4b1d-b837-c6868000adbc" name="Lower" value="0">
+                      <elementDefinition Id="6e63f395-02c3-4f6c-8844-5c79fcb208de" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ab9686bc-b176-4c89-b70a-8ee744104bea" name="Upper" value="*">
+                      <elementDefinition Id="fcd627be-4df8-4599-bccc-307ad0f5a0a7" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="461537b9-dbf2-4499-be42-5405c49fd537" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8754fa9-7544-42c4-bb6e-3d6d3dad9350" name="Lokale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c105b68f-03e6-45a3-809c-33cac6b44469" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d816c394-055f-42a6-8e28-6e746b5fbbb9" />
+          </association>
+          <association Id="06dbe071-b290-4b54-9d21-e66c40512141" isDerived="false" sourceEndRoleName="Booking" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3323b883-9817-47f5-89e0-9adb34520142" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f3f0677-4275-4857-968e-39e5c2c6cb8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="306da785-ff09-44c6-8f51-af198a689d26" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb80d2a1-cae4-41c9-b50f-0e8178da84c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bd70b380-75b7-46bd-9437-cdd94e2e1ae2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="37b11954-fda9-4d32-87c4-f97e3308cbe5" name="BookingLokation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0a847c2-4aca-4c09-9233-f3fbaf81b916" />
+          </property>
+          <property Id="31fde467-4732-4638-9043-a4a3ea6237c2" name="DateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82f7194b-0474-40dd-8306-76fcafe14b9d" />
+          </property>
+          <property Id="48321af9-3086-4ef9-9d30-0b75f8c23c84" name="DeltagerAntal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4830221f-4b4a-4542-ae1d-ffe4512432dc" />
+          </property>
+          <property Id="a04269e5-2ab8-4849-9263-b2776329ff52" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="502310a4-d77b-40f9-8455-0ef0831d0d2d" />
+          </property>
+          <property Id="f9d591be-08c0-4cbf-9a5d-71b30c662f2d" name="Lokale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="41473481-ce39-484f-8f49-41917b6893f6" />
+          </property>
+          <property Id="9cd2a886-8d9e-495b-8a5e-1c4af7d3283a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="846c1dc7-02b4-4ce7-b1ae-f8c40925e465" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="213f9d3c-5301-4c5f-b24f-b552f8e7223a" name="KursusOCSingleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0c73c3e-171f-4620-992d-edd31c2b690e" />
+        <targetEnds>
+          <association Id="4635f857-b30b-4baa-89f0-209100201041" isDerived="false" sourceEndRoleName="KursusOCSingleton" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e16a126e-06b8-475a-be3d-98fa3a28a88a" name="KursusOCSingleton" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c3766060-2931-4bec-bbd1-f4846906266d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57832d91-bdc2-4025-ba9e-ad4e42ef8ff6" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bdd5c29-e884-4726-aa55-d59f9d6a86e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e10b0e7-499e-4330-a549-50571a9374dd" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c4c6f393-10fe-4c2a-984d-6a43b2baf81d" name="Instance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13fced0b-d1d2-4a49-a08a-37f42aa1a198" />
+          </property>
+          <property Id="c7b5e738-f74f-4ef0-8e28-6476070554bd" name="SingletonOCKursus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e707859-ed73-43c6-89db-069776c9dbba" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="013fb06e-51a8-4cab-81e9-eaec06f4aa02" name="KursusOCSingleton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="851aa8fe-6842-482e-89ac-e81443553ee9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0499eed3-3df1-474e-94c1-f5f27a0af4b8" name="BookingSingleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82525598-0cc1-431b-acd6-3c98c03a9fc0" />
+        <targetEnds>
+          <association Id="c913017f-62ac-4fb5-8876-5f0295046141" isDerived="false" sourceEndRoleName="BookingSingleton" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa232e2b-8d0b-4dba-83bf-4d0e17ecbceb" name="BookingSingleton" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58a9ab42-664e-4cbf-b4f0-ac9b869ac200" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f18910cd-3faa-4599-b29a-2d67439dd42d" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef3c7e2c-f093-4913-b11c-fd6742726c13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1fced7e6-9449-4d3f-a7b6-b81c435e117b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="286774d0-3174-4e08-b6e0-145b4f42af8b" name="SingletonOCBooking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="deb363d6-f374-41b2-b310-9b8053bbf0c7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="775629c6-06d3-4371-9817-d90fc80deab3" name="BookingSingleton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85488621-cb4a-47e9-aa22-79445894bc3b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c4eab0a-c6e0-4442-acc7-a142ae3555a9" name="Lokale" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e78fd3a-da76-4a4d-beda-042c42da27b2" />
+        <targetEnds>
+          <association Id="4486ce38-8ca1-428e-9f25-a09f4e0cdb8a" isDerived="false" sourceEndRoleName="Lokale" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41b832f4-b336-4953-8791-cb7f7e2a33c3" name="Lokale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb06026e-fd3d-45e7-bbf8-8f0c2a0bcae7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf676ddb-bfbb-47db-9668-9fdd7ac9a2b8" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2d017f57-984c-410b-aef9-eba7745aef5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c6f9ded8-9ee2-4ee2-8d9f-634bc2d74aa7" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b5253e1a-81cc-4be5-9270-d02ab0e97eb9" name="Andresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e2bc041-a24b-4125-87b5-99a999448436" />
+          </property>
+          <property Id="21b547ee-9268-4281-ac6a-f8ffe9ff75ff" name="LokaleNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d747b1b9-025d-4d92-b2f3-1ca5ed571436" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5dd3757-54f5-4a85-9680-0ee31f952b97" name="Kursus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f59f5a19-3f2b-4758-95b0-c4af8066ba7f" />
+        <targetEnds>
+          <association Id="4221552b-8d89-40ce-8ab4-7b92971773d2" isDerived="false" sourceEndRoleName="Kursus" targetEndRoleName="Deltager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="94aebfc2-b3b3-4863-9456-9e5ca9ea3651" LastKnownName="Deltager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2219b3eb-e668-41a5-9cd3-dc1ad91ca464" name="Kursus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cde67ff0-f6b8-44fc-81ff-10ce0f05e074" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="792740ec-a9bc-45ae-99f7-48761c2c14e1" name="Deltager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3c6bf3a6-ed50-4bf9-930d-0a92241f8039" name="Lower" value="6">
+                      <elementDefinition Id="243cbc58-f315-4919-8c4d-975b09462985" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="835bce96-5dd4-4c9b-8c60-c8cc676878af" name="Upper" value="*">
+                      <elementDefinition Id="b2a3ff66-b0aa-4dc3-b931-42eb54ed00b0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="86e66fdd-fd5e-41bb-b41b-3561174d724d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec4448bf-f994-43bc-8d3c-11d6d4415827" />
+          </association>
+          <association Id="0ccf9964-ea97-4525-9e46-ded1448415ee" isDerived="false" sourceEndRoleName="Kursus" targetEndRoleName="Lokale" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c4eab0a-c6e0-4442-acc7-a142ae3555a9" LastKnownName="Lokale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3346395-6fd3-4959-aeb1-c1791d852612" name="Kursus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7cf937b4-d48b-4a3f-bec1-4a4d12f8408f" name="Lower" value="0">
+                      <elementDefinition Id="04f10d46-cc63-441e-85d8-09e0ba276d6e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e5e50106-0132-4f2d-8be6-6b6fd5aefdb2" name="Upper" value="*">
+                      <elementDefinition Id="5dbe5573-efd6-410b-a9c8-53bf0a52d7fd" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fa2fd90e-9f01-457b-9a55-77981955cae0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4c7d7b0-4f97-48c9-aebb-0a093a1828e7" name="Lokale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ddd4802a-3783-47be-a832-ae97906458f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9ee6fecb-9b94-43d7-b6fd-e9394cebed9d" />
+          </association>
+          <association Id="52da34a7-5ac0-4220-b303-bd4314db5b33" isDerived="false" sourceEndRoleName="Kursus" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d05354f-2601-46b7-a901-dc3724177ee9" name="Kursus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05e748fa-ae67-44a8-a046-affa67fc21d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b40036d-7f1f-4c02-b006-756cb5f38c5b" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb8b0010-e042-4fbd-b92d-7ea53dbf462b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="901d7e48-0111-45c9-952f-559afc24406b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="82dd2e9a-c041-423e-bdd3-518bb5f80f9f" name="DeltagerListe" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f14e733-46e2-4d74-a691-c9c1b6389df6" />
+          </property>
+          <property Id="1ae2ed14-7e3b-40e9-8370-b7559290ffa1" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1b55a170-e855-4538-a194-d877857aff4f" />
+          </property>
+          <property Id="c9e77809-d8f0-4d0a-879d-2c458946c5ec" name="KursusId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="78aea648-e8de-4351-b3be-b0f565f04b5a" />
+          </property>
+          <property Id="a6119f66-384d-409b-9206-d5fd2bd40196" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0de44fbc-6375-41d5-a5e9-cb79df0ebb2d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="94aebfc2-b3b3-4863-9456-9e5ca9ea3651" name="Deltager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9d2c2e00-7acc-40d7-b13a-ae7253b27468" />
+        <ownedAttributesInternal>
+          <property Id="d7dc568f-31c6-45c8-ac20-652ae69de261" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="76f7e2a0-826d-4726-887e-d67e145565f9" />
+          </property>
+          <property Id="6d4abb7d-3dca-4290-b902-beef0f2bb5ec" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="975450fe-874e-45bc-8d32-5aec688673c8" />
+          </property>
+          <property Id="cf59a6f1-c460-43d7-ae4d-f6ec3a4eb38a" name="TelefonNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="219d9149-5c9f-475f-a754-cf2d7cbe54da" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f914e413-f03b-44e4-90f3-5d09cc30e803" name="KursusOprettelseVM" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f91da2cc-4e1c-4fa6-9bd3-822cc8162c23" />
+        <targetEnds>
+          <association Id="d6cc2a52-a7eb-41a9-bf8d-5593f9272d12" isDerived="false" sourceEndRoleName="KursusOprettelseVM" targetEndRoleName="Deltager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="94aebfc2-b3b3-4863-9456-9e5ca9ea3651" LastKnownName="Deltager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ffcffce7-5f74-444a-8d1a-809005afc015" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="93b037ac-4037-4d32-977e-cf167d1be50d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e397710-c292-4b78-95fd-465c05b8fa51" name="Deltager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8af33e7-97a3-42f8-abed-d5edd647622e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c577b3af-09fa-46ab-bde2-32ef9218849d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cc2e8ee5-b60d-4965-827d-def57322151c" name="BookCommand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="85f05102-846b-4fac-9026-571a22d7dfd5" />
+          </property>
+          <property Id="197f7b6a-4dd5-44c9-85fe-a75e641cdbcf" name="BookDateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6c2b3ee-9438-4a95-9b04-d0c4b877541e" />
+          </property>
+          <property Id="5acc092c-96e9-4f0b-9c3a-28f8f8dfbfac" name="BookDeltagerAntal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af981dac-61d0-4a7e-9a26-576c23c69d7f" />
+          </property>
+          <property Id="27ca4887-4539-44af-894e-822935d34c7d" name="BookLokale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0181e9b5-2178-4c05-8f01-4cafbd4c77bd" />
+          </property>
+          <property Id="6f2e3ccd-6fa7-484c-9281-51212fe1b177" name="BookName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d28ac6da-ec71-4cf1-8030-988b304e2b76" />
+          </property>
+          <property Id="28b2bb35-22db-4405-9380-3ee47e2f2a08" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c5d54d5-2c59-43db-9b16-fd182f529351" />
+          </property>
+          <property Id="f3f8e1e3-9a99-42e3-b9b2-65e0ffe8b6fe" name="KursusNavnListe" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f405cfeb-8ddf-48d3-b951-a2618b7be1b2" />
+          </property>
+          <property Id="f7b668ef-ebee-4aea-a57f-e37444edc347" name="KursusOcSingleton" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fd5556a4-1944-4b60-9858-c32c0add7914" />
+          </property>
+          <property Id="69860193-7b5a-4d9c-bbb0-cd567657fdde" name="LokaleListe" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b2eaf1ba-bb48-43b1-b65d-f3092e856aed" />
+          </property>
+          <property Id="fb6e6c7e-4e03-4704-aa40-b35b56cfd2e4" name="LokaleOC" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5106436-4ed6-4e9d-abb6-3d854472be33" />
+          </property>
+          <property Id="8b42513a-8187-4ae7-9058-d6a30f223996" name="LokationKO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f66a0fe-4840-4eda-b5c7-c3d9763ccd83" />
+          </property>
+          <property Id="92ea41d3-3890-45a3-af35-5ffabd77c1f9" name="LokationListe" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3276bb37-05bc-4e31-adb9-a32133ef9c1d" />
+          </property>
+          <property Id="726f9e53-3132-4cb8-a3e0-b163c2477fc5" name="LokationString" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6856d7ad-1fe7-42ce-aacf-84cde45fe826" />
+          </property>
+          <property Id="e2d41f01-3f39-4e1c-b4b5-5b410ff4362c" name="NavigateForsideCommand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22d524e1-2ef8-49a8-bd64-286936509363" />
+          </property>
+          <property Id="70337b16-d48e-4167-a811-edccf788b1a7" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4248e2c3-d851-46f7-87c7-dabb7f466d90" />
+          </property>
+          <property Id="07f00cd7-5666-43c3-8d13-a65e6ccfa168" name="SelectedKurus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb63875e-18b0-48b6-a020-b30af11d3a53" />
+          </property>
+          <property Id="5edf5615-0951-4d80-b99d-ab97f4203b93" name="TelefonNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63f6a482-11f1-45a5-9522-d53c7da9ef62" />
+          </property>
+          <property Id="0e6735a5-6623-4526-bc1d-2d69cc2ae3ef" name="tempBookDeltagerAntal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb526b0a-7350-422d-afc8-2f726b04bfaf" />
+          </property>
+          <property Id="77cab956-fe33-41df-8f49-be0fed239ae2" name="tempEmail" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60d297cc-1b5e-45cc-b6ca-9dc473b722ad" />
+          </property>
+          <property Id="d4d53631-7a6b-43d9-a327-199cb8203e70" name="tempNavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="43b1cdbe-1e1a-4cd1-8074-9b421700708b" />
+          </property>
+          <property Id="c7aa7afa-a336-45fb-b92a-ea2e7e99944c" name="tempTelefonNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30be3758-e0ea-4221-b14e-96d45120875d" />
+          </property>
+          <property Id="e10eb3bc-ffa5-49df-be33-023778ddbe37" name="TilføjCommand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d559a687-9f00-4cdc-802a-68f3b394337c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="02b1d652-4ffa-4316-86c1-afbf49bfad8e" name="KursusNavnToList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="518a6bcf-8ca3-4e18-8da6-8f3eddb8db08" />
+          </operation>
+          <operation Id="6a3e0acc-dcbe-4673-af65-2482fde38f9b" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3e1188c8-eb58-4051-99c1-f0ad5af95388" />
+          </operation>
+          <operation Id="78308aef-f1a3-4e6e-8bfc-3c99815595e5" name="LedigeLokaler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01cb23f5-92a9-46fa-b8f4-e6086eb0eebc" />
+          </operation>
+          <operation Id="457d5de4-c6e9-4303-94f2-243286fc40b3" name="NavigateToForside" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f29636e2-ce59-44fc-9e7a-24314a390e9a" />
+          </operation>
+          <operation Id="3d1c843e-eca5-4477-ade1-a4016174e183" name="NewBooking" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="453d5500-08f8-4178-88f6-f59f28676480" />
+          </operation>
+          <operation Id="fe65af66-b58e-41a5-9334-7856c3c8465e" name="TilføjDeltagerTilKursus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="469d84a6-26b1-4007-9dab-6e70ee458875" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="875083d8-c884-422b-ae38-e89d178db09a" name="RelayCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c3918c52-81a9-4442-b297-09c05c4c26b5" />
+        <targetEnds>
+          <association Id="679ffd91-a3b0-43a9-9a19-1659cdbe4dbd" isDerived="false" sourceEndRoleName="RelayCommand" targetEndRoleName="KursusOprettelseVM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f914e413-f03b-44e4-90f3-5d09cc30e803" LastKnownName="KursusOprettelseVM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80ae5d59-223a-490e-835e-779cf2b436b1" name="RelayCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="73e74e88-5271-4d3c-ae6d-c3d1c6c10ee6" name="Lower" value="0">
+                      <elementDefinition Id="fc60d688-587d-4473-a235-78f5a1569f82" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fbe4c989-b758-4ba9-b9ec-8d33593a5205" name="Upper" value="*">
+                      <elementDefinition Id="0e830163-6bd2-45db-8311-4d5d6408a25f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="09fb6311-99f1-4614-8627-cbc57f0e86c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2111f277-fccb-4093-a505-c823cd1efe03" name="KursusOprettelseVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="317611ac-3b75-42ae-8349-0f6ce3c2215e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a83e5dfb-33ab-4aa2-8256-9ba2d8835a98" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="6aba546b-d4ce-4276-b52a-344d699b6681" name="CanExecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7599bee1-59ed-4573-ba0d-c916f15c1f23" />
+          </operation>
+          <operation Id="4a81c4df-0649-442a-bc1d-6b0871f13921" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3fdce50-bee3-4a59-b36b-ac9ec7cd689c" />
+          </operation>
+          <operation Id="106b95aa-45a9-4f8b-b911-0d7921f83696" name="RaiseCanExecuteChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="27cb3bc0-cddc-4bf6-8efd-e361e5419df7" />
+          </operation>
+          <operation Id="87fbef6c-bd71-47f8-82de-42b1877c5c10" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71d0de95-a85f-42b4-8742-bec64d3db13d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="82941602-0bc9-41b0-aed5-467d15ed25dd" name="Lokation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1eb52c44-942a-4433-a3a3-68fc6c38353a" />
+        <targetEnds>
+          <association Id="b45e493f-1ce1-47fb-ade1-586c4fae6454" isDerived="false" sourceEndRoleName="Lokation" targetEndRoleName="Lokale" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c4eab0a-c6e0-4442-acc7-a142ae3555a9" LastKnownName="Lokale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7213a5d7-d167-4423-a592-d98a1c1fdf31" name="Lokation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d577d8ab-92b8-4fc3-8d98-fbd6313032f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37b686b6-562e-4b75-9b48-05929df37e03" name="Lokale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bec33827-8ecc-407d-9e88-024709c32686" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3107e421-061a-4a75-b24d-b870437a0854" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="af85788d-56fa-4168-980f-27131521c4b9" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e3a2099-d5f4-4930-896a-ce364a410d67" />
+          </property>
+          <property Id="1b410f56-b2e8-4ebf-9401-1f22ab839aef" name="ByNavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63c4d5c4-c1f8-43bc-86f2-d4709215bbfa" />
+          </property>
+          <property Id="ed33048f-ae04-41b8-aa20-2426f53cb0b2" name="Land" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f0f0157-d788-4227-8fd5-9f958b6f35fa" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6259b27b-3f12-4e13-8571-95b6a8b56963" name="DesignDiagrammer">
+    <elementDefinition Id="6b915cfa-210f-424a-aea5-e7aab71fca3d" />
+  </package>
+</logicalClassDesignerModel>
